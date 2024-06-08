@@ -19,38 +19,41 @@ This project aims to classify different categories of food using deep learning t
 - [Contributing](#contributing)
 
 ## Abstract
-Food classification is crucial for numerous
+-Food classification is crucial for numerous
 applications, including dietary monitoring and image-based
 food recognition, aiming to promote healthier eating habits
-and facilitate food-related tasks. This abstract presents a
-comparative analysis of three deep learning models—Inception-
+and facilitate food-related tasks. 
+-This abstract presents a comparative analysis of three deep learning models—Inception-
 V3, MobileNet, and a custom CNN—for classifying food items.
-Additionally, this study explores the efficacy of InceptionNet
+-Additionally, this study explores the efficacy of InceptionNet
 and MobileNet architectures alongside a custom CNN model.
-The motivation behind this research stems from the growing
+-The motivation behind this research stems from the growing
 need for efficient food classification systems to promote healthier
 dietary choices and streamline food-related tasks in various
 domains. The promising results underscore the potential of our
 approach to significantly enhance the accuracy and efficiency
 of food classification systems, with wide-ranging applications in
-dietary monitoring and food recognition. Dataset contains of
-17500 images of different categories like pizza, hot dog, waffles
-etc.
-An InceptionNetV3 version is used in this paper, which
+dietary monitoring and food recognition. 
+-Dataset contains of 17500 images of different categories like pizza, hot dog, waffles etc.
+
+-An InceptionNetV3 version is used in this paper, which
 uses optimizer Adam and loss function Categorical Cross
 Entropy and batch size is 32 and epochs are 50.
 This model gives the accuracy of 88.6% and F1 score of
 0.87 and precision of 0.88 and recall of 0.87.
-A MobileNet version is used in this paper, which uses
+
+-A MobileNet version is used in this paper, which uses
 optimizer SGD and loss function Categorical Cross Entropy and
 batch size is 30 and epochs 50.
 This model gives the accuracy of 88.4% and F1 score of
 0.89 and precision of 0.89 and recall of 0.89.
-A Custom CNN version is used in this paper, which uses
+
+-A Custom CNN version is used in this paper, which uses
 optimizer Adam and loss function Categorical Cross Entropy
 and batch size is 30 and epochs 100.
 This model gives the accuracy of 78.7% and F1 score of
 0.78 and precision of 0.78 and recall of 0.77.
+
 Confusion matrix indicates for all category the false negatives
 are zero. And false positives are 2. Total types of categories =20.
 
