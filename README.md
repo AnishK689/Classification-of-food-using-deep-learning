@@ -86,7 +86,57 @@ This project involves the following steps:
    git clone https://github.com/yourusername/food-classification.git
    cd food-classification
 2. Launch the jupyter notebook
+3. # 🍽️ Food Classification with InceptionV3
 
+This project uses a deep learning model to classify images of food into 20 categories. The model was trained using **InceptionV3** with Keras on **17,500 training images**, and validated/tested on **2,500 images**.
+
+---
+
+## 📊 Training Summary
+
+| Epoch | Accuracy | Loss   | Validation Accuracy | Validation Loss |
+|-------|----------|--------|---------------------|-----------------|
+| 100   | 99.81%   | 0.0112 | 88.42%              | 0.5644          |
+
+---
+
+## 🧠 Pretrained Model Usage
+
+Due to GitHub’s file size limitations, the trained model (`.h5`) is hosted on Kaggle.
+
+### 📥 Download the Model
+
+1. Visit the Kaggle model link:  
+   👉 [Download from Kaggle](https://www.kaggle.com/models/anishhhhhhhh18/inceptionv3)
+
+2. Download the file:  
+   `food_classifier_model.h5`
+
+3. Place the file in the following directory of this repository:
+
+```
+<project-root>/
+├── models/
+│   └── food_classifier_model.h5  ← place it here
+├── your_code.py
+├── README.md
+```
+
+> 📁 **Note**: If the `models/` directory does not exist, you can create it manually.
+
+---
+
+### ✅ How to Load the Model in Code
+
+```python
+from tensorflow.keras.models import load_model
+
+model = load_model('models/food_classifier_model.h5')
+```
+
+Now you're ready to make predictions using the pretrained model!
+
+---
    
 ## Dataset
 
